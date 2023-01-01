@@ -1,3 +1,7 @@
 th.manage-column.column-id {
     width: 4em;
 }
+
+td.id.column-id {
+	white-space: nowrap;
+}
