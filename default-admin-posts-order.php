@@ -68,7 +68,7 @@ function dapo_get_posts_orderby( $query ) {
         return;
 
     // If the order is blank, then use the ID as a substitute for creation date.
-    if( $query->get( 'orderby' ) == '' ) {
+    if( $query->get( 'orderby' ) == '' || $query->get( 'orderby' ) == 'modified' ) {
 	   	$query->set( 'orderby',  'ID' );
     }
 
