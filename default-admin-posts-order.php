@@ -64,7 +64,7 @@ function dapo_manage_post_posts_custom_column( $column_key, $post_id ) {
 function dapo_get_posts_orderby( $query ) {
 
 	// Nothing to do:
-    if( ! is_admin() && ! $query->is_main_query() )
+    if( ! is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) )
         return;
 
     // If the order is blank, then use the ID as a substitute for creation date.
