@@ -17,6 +17,8 @@ WordPress sorts the posts list by posted date (if still a draft this becomes the
 
 The plugin will also make this the default sort order for the posts screen.
 
+The plugin only changes the posts screen and does not effect the pages or other custom post types.
+
 == Installation ==
 
 1. Extract the archive file into your plugins directory in the default-admin-posts-order folder.
